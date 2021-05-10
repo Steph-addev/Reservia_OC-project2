@@ -1,0 +1,285 @@
+/*Mise en page générale*/
+#bloc_page
+{
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+}
+a
+{
+  text-decoration: none;
+  color: inherit;
+}
+section
+{
+  margin-left: 20px;
+  margin-right: 20px;  
+}
+/*Mise en page Header*/
+header
+{
+  margin-left: 20px;
+  margin-right: 20px;
+}
+/*Logo & Menu de Navigation*/
+#bloc_logo_navigation
+{
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+.logo
+{
+  display: flex;
+  justify-content: flex-start;
+}
+nav ul 
+{
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end; 
+    align-items: center; 
+}
+nav li
+{
+  margin-right: 30px;
+}
+li a:hover
+{
+  border-top: 3px #0065FC solid;
+  color: #0065FC;
+  padding-top: 35px;
+}
+.suscribed
+{
+    color: #0065FC;
+    font-weight: bold;
+}
+/*Mise en page Recherche et Filtres*/
+h1
+{
+    font-size: 15px;
+}
+#policehead
+{
+  font-size: 14px;
+}
+#barre_recherche
+{
+  display: flex;
+  justify-content:flex-start;
+  align-items: center;
+  margin-top: 20px;
+}
+#barre_recherche i
+{
+  background-color: rgb(242, 242, 242);
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  height: 35px;
+  width: 40px;
+  text-align: center;
+}
+input
+{
+  border-top: 1px rgb(242, 242, 242) solid;
+  border-bottom: 1px rgb(242, 242, 242) solid;
+  border-left: none;
+  border-right: none;
+  height: 35px;
+}
+.button_style
+{
+  background-color: #0065fc;
+  color: white;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  width: 120px;
+  height: 35px;
+  border: none;
+}
+#Filtres
+{
+  display: flex;
+  align-items: baseline;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  text-align:center;
+}
+#Filtres i
+{
+  color: #0065fc;
+  background-color: rgb(222, 235, 255);
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+}
+#Filtres a
+{
+  border: 2px rgb(217, 217, 217) solid;
+  border-radius: 23px;
+  height: 40px;
+  width: 190px;
+}
+/*Mise en page du Corps*/
+h2
+{
+  font-size: 15px;
+  padding: 20px 0 0 20px;
+}
+/*Mise en page de la section 1*/
+/*Mise en page "hébergements à Marseille" et "les plus populaires"*/
+#bloc_hébergements
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+/*Mise en page de la flexbox "Hébergements à Marseille"*/
+#bloc_Marseille
+{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color: rgb(242, 242, 242);
+  border-radius: 10px;
+  width: 73%;
+}
+#bloc_Marseille h4
+{
+  margin: 5px 0 0 8px;
+  font-size: 12px;
+}
+#bloc_imageMarseille
+{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 4px;
+  padding: 7px;
+}
+.police_Marseille
+{
+  margin: 6px 0 0 7px;
+  padding: 1px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 8px;
+}
+.miniatures_Marseille /*Images background*/
+{
+  background-color: white;
+  border-radius: 10px;
+  width: 200px;
+  height: 150px;
+  box-shadow: 3px 3px 2px rgb(232, 232, 232);
+  margin-bottom: 20px;
+  object-fit: cover;
+}
+.miniatures_Marseille img /*Images miniatures*/
+{
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  margin-top: 3px;
+  margin-left: 4px;
+  width: 192px;
+  height: 85px;
+  object-fit: cover;
+}
+/*Mise en page de la flexbox "les plus populaires"*/ 
+#bloc_populaires
+{
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(242, 242, 242);
+  border-radius: 10px;
+  width: 25%;
+}
+#bloc_populaires h4
+{
+  margin: 5px 0 0 100px;
+  font-size: 12px;
+}
+#bloc_imagePopulaires
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: 20px;
+}
+.police_Populaires p
+{
+  margin:6px 0 0 100px;
+  padding: 1px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 10px;
+}
+.miniatures_populaires /*Images background*/
+{
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 3px 3px 2px rgb(232, 232, 232);
+  width: 250px;
+  height: 91px;
+  margin: 20px;
+}
+.miniatures_populaires img /*Images miniatures*/
+{
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  width: 86px;
+  height: 85px;
+  margin-top: 3px;
+  margin-left: 4px;
+  object-fit: cover;
+}
+/*Mise en page de la flexbox "Activités"*/
+#bloc_imagesactivités /*Mise en page grid images activités*/
+{
+  width: 100%;
+  display: grid;
+  grid-gap: 15px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-areas: 
+  "port pomègues calanques garde"
+  "port frioul calanques longchamp"
+  ;
+}
+#bloc_imagesactivités img /*Images activités*/
+{
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  width: 100%;
+}
+.port
+{
+  grid-area: port;
+}
+.pomègues
+{
+  grid-area: pomègues;
+}
+.frioul
+{
+  grid-area: frioul;
+}
+.calanques
+{
+  grid-area: calanques;
+}
+.garde
+{
+  grid-area: garde;
+}
+.longchamp
+{
+  grid-area: longchamp;
+}
+/*Footer mise en page*/
+footer
+{
+   background-color: rgb(242, 242, 242); 
+   display: flex;
+   justify-content: space-around;
+}
