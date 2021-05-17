@@ -4,6 +4,8 @@
     display: flex;
     flex-direction: column;
     font-family: Arial, Helvetica, sans-serif;
+    width: 80%;
+    margin: auto;
 }
 a
 {
@@ -38,7 +40,7 @@ nav ul
     list-style-type: none;
     display: flex;
     justify-content: flex-end; 
-    align-items: center; 
+    align-items: center;
 }
 nav li
 {
@@ -55,7 +57,7 @@ li a:hover
     color: #0065FC;
     font-weight: bold;
 }
-/*Mise en page Recherche et Filtres*/
+/*Mise en page Barre de recherche et Filtres*/
 h1
 {
     font-size: 15px;
@@ -87,6 +89,8 @@ input
   border-left: none;
   border-right: none;
   height: 35px;
+  font-weight: bold;
+  color: black;
 }
 .button_style
 {
@@ -114,12 +118,21 @@ input
   height: 40px;
   border-radius: 20px;
 }
+.fas
+{
+  line-height: 36px;
+}
 #Filtres a
 {
   border: 2px rgb(217, 217, 217) solid;
   border-radius: 23px;
   height: 40px;
   width: 190px;
+  font-weight: bold; 
+}
+.tags
+{
+  line-height: 36px;
 }
 /*Mise en page du Corps*/
 h2
@@ -133,7 +146,7 @@ h2
 {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 /*Mise en page de la flexbox "Hébergements à Marseille"*/
 #bloc_Marseille
@@ -143,11 +156,12 @@ h2
   flex-wrap: wrap;
   background-color: rgb(242, 242, 242);
   border-radius: 10px;
-  width: 73%;
+  width: 80%;
+  margin-right: 15px;
 }
-#bloc_Marseille h4
+#bloc_Marseille h3
 {
-  margin: 5px 0 0 8px;
+  margin: 2px 0 0 8px;
   font-size: 12px;
 }
 #bloc_imageMarseille
@@ -161,10 +175,10 @@ h2
 }
 .police_Marseille
 {
-  margin: 6px 0 0 7px;
+  margin: 4px 0 0 7px;
   padding: 1px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 8px;
+  font-size: 10px;
 }
 .miniatures_Marseille /*Images background*/
 {
@@ -193,24 +207,26 @@ h2
   flex-direction: column;
   background-color: rgb(242, 242, 242);
   border-radius: 10px;
-  width: 25%;
+  width: 35%;
+  margin-left: 15px;
 }
-#bloc_populaires h4
+#bloc_populaires h3
 {
-  margin: 5px 0 0 100px;
+  margin: 12px 0 0 120px;
   font-size: 12px;
 }
 #bloc_imagePopulaires
 {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  margin: 20px;
+  justify-content: space-between;
+  margin: 7px 30px 30px 30px;
+  height: 100%;
 }
-.police_Populaires p
+.police_Populaires
 {
-  margin:6px 0 0 100px;
-  padding: 1px;
+  margin:6px 0 0 120px;
+  padding-bottom: 50px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 10px;
 }
@@ -219,34 +235,36 @@ h2
   background-color: white;
   border-radius: 10px;
   box-shadow: 3px 3px 2px rgb(232, 232, 232);
-  width: 250px;
-  height: 91px;
-  margin: 20px;
+  width: 95%;
+  height: 107px;
 }
 .miniatures_populaires img /*Images miniatures*/
 {
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
-  width: 86px;
-  height: 85px;
-  margin-top: 3px;
+  position: relative;
+  top: -19px;
+  width: 100px;
+  height: 100px;
+  margin-top: -200px;
   margin-left: 4px;
   object-fit: cover;
 }
 /*Mise en page de la flexbox "Activités"*/
-#bloc_imagesactivités /*Mise en page grid images activités*/
+#bloc_imagesactivités /*grid images activités*/
 {
   width: 100%;
   display: grid;
-  grid-gap: 15px;
+  grid-gap: 30px;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 270px);
   grid-template-areas: 
   "port pomègues calanques garde"
   "port frioul calanques longchamp"
   ;
+  margin-bottom: 30px;
 }
-#bloc_imagesactivités img /*Images activités*/
+#bloc_imagesactivités img /*Format images activités*/
 {
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
@@ -255,26 +273,32 @@ h2
 .port
 {
   grid-area: port;
+  background-color: blueviolet;
 }
 .pomègues
 {
   grid-area: pomègues;
+  background-color: crimson;
 }
 .frioul
 {
   grid-area: frioul;
+  background-color:greenyellow;
 }
 .calanques
 {
   grid-area: calanques;
+  background-color: darkolivegreen;
 }
 .garde
 {
   grid-area: garde;
+  background-color: deeppink;
 }
 .longchamp
 {
   grid-area: longchamp;
+  background-color:goldenrod;
 }
 /*Footer mise en page*/
 footer
