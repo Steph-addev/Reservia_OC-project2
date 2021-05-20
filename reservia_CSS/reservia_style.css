@@ -1,7 +1,7 @@
 /*Mise en page générale*/
 #bloc_page
 {
-    display: flex;
+  display: flex;
     flex-direction: column;
     font-family: Arial, Helvetica, sans-serif;
     width: 80%;
@@ -17,13 +17,13 @@ section
   margin-left: 20px;
   margin-right: 20px;  
 }
-/*Mise en page Header*/
+/*Mise en page Header--------------------------------------------------------------------------------------*/
 header
 {
   margin-left: 20px;
   margin-right: 20px;
 }
-/*Logo & Menu de Navigation*/
+/*Logo & Menu de Navigation -------------------------------------------------------------------------------*/
 #bloc_logo_navigation
 {
   display: flex;
@@ -57,10 +57,10 @@ li a:hover
     color: #0065FC;
     font-weight: bold;
 }
-/*Mise en page Barre de recherche et Filtres*/
+/*Mise en page Barre de recherche et Filtres ------------------------------------------------------------*/
 h1
 {
-    font-size: 15px;
+    font-size: 16px;
 }
 #policehead
 {
@@ -81,6 +81,7 @@ h1
   height: 35px;
   width: 40px;
   text-align: center;
+  line-height: 36px;
 }
 input
 {
@@ -106,9 +107,19 @@ input
 {
   display: flex;
   align-items: baseline;
+  justify-content: space-between;
   margin-top: 30px;
   margin-bottom: 30px;
   text-align:center;
+  flex-wrap: wrap;
+  width: 70%;
+  font-size: 15px;
+  font-weight: bold;
+}
+#Filtres a:hover
+{
+  color:#0065fc;
+  text-decoration: underline;
 }
 #Filtres i
 {
@@ -117,36 +128,102 @@ input
   width: 40px;
   height: 40px;
   border-radius: 20px;
-}
-.fas
-{
   line-height: 36px;
 }
-#Filtres a
+#dollar
 {
+  display: flex;
   border: 2px rgb(217, 217, 217) solid;
   border-radius: 23px;
   height: 40px;
-  width: 190px;
-  font-weight: bold; 
-}
-.tags
-{
+  width: 150px;
+  font-weight: bold;
   line-height: 36px;
+  justify-content: space-between;
 }
-/*Mise en page du Corps*/
-h2
+#dollar i
 {
-  font-size: 15px;
-  padding: 20px 0 0 20px;
+  position: absolute;
+  z-index: 1;
 }
+.economy
+{
+  margin-right: 10px;
+}
+#famille
+{
+  display: flex;
+  border: 2px rgb(217, 217, 217) solid;
+  border-radius: 23px;
+  height: 40px;
+  width: 114px;
+  font-weight: bold;
+  line-height: 36px;
+  justify-content: space-between;
+}
+#famille i
+{
+  position: absolute;
+  z-index: 1;
+}
+.family
+{
+  margin-right: 10px;
+}
+#romantique
+{
+  display: flex;
+  border: 2px rgb(217, 217, 217) solid;
+  border-radius: 23px;
+  height: 40px;
+  width: 150px;
+  font-weight: bold;
+  line-height: 36px;
+  justify-content: space-between;
+}
+#romantique i
+{
+  position: absolute;
+  z-index: 1;
+}
+.romance
+{
+  margin-right: 10px;
+}
+#animaux 
+{
+  display: flex;
+  border: 2px rgb(217, 217, 217) solid;
+  border-radius: 23px;
+  height: 40px;
+  width: 200px;
+  font-weight: bold;
+  line-height: 36px;
+  justify-content: space-between;
+}
+#animaux i
+{
+  position: absolute;
+  z-index: 1;
+}
+.animals
+{
+  margin-right: 10px;
+}
+/*Mise en page du Corps --------------------------------------------------------------------------------*/
+
 /*Mise en page de la section 1*/
-/*Mise en page "hébergements à Marseille" et "les plus populaires"*/
+/*Mise en page "hébergements à Marseille" et "les plus populaires"--------------------------------------*/
 #bloc_hébergements
 {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+}
+h2
+{
+  font-size: 15px;
+  padding: 20px 0 0 20px;
 }
 /*Mise en page de la flexbox "Hébergements à Marseille"*/
 #bloc_Marseille
@@ -200,7 +277,15 @@ h2
   height: 85px;
   object-fit: cover;
 }
-/*Mise en page de la flexbox "les plus populaires"*/ 
+/*Mise en page de la flexbox "les plus populaires"-----------------------------------------------------*/ 
+.popular_title
+{
+ display:flex;
+ flex-direction: row;
+ justify-content: space-between;
+ align-items: baseline;
+ margin: 0 30px 0 7px;
+}
 #bloc_populaires
 {
   display: flex;
@@ -212,54 +297,91 @@ h2
 }
 #bloc_populaires h3
 {
-  margin: 12px 0 0 120px;
   font-size: 12px;
+  margin: 5px 10px 5px 10px;
 }
 #bloc_imagePopulaires
 {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
   margin: 7px 30px 30px 30px;
   height: 100%;
 }
 .police_Populaires
 {
-  margin:6px 0 0 120px;
-  padding-bottom: 50px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 10px;
+  margin: 2px 10px 5px 10px;
 }
-.miniatures_populaires /*Images background*/
+#miniatures_soleil
 {
+  display: flex;
+  flex-direction: row;
   background-color: white;
   border-radius: 10px;
   box-shadow: 3px 3px 2px rgb(232, 232, 232);
-  width: 95%;
-  height: 107px;
+  width: 100%;
+  height: 105px;
 }
-.miniatures_populaires img /*Images miniatures*/
+#miniatures_soleil img
 {
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
-  position: relative;
-  top: -19px;
   width: 100px;
   height: 100px;
-  margin-top: -200px;
-  margin-left: 4px;
+  margin: 2px 0 0 3px;
   object-fit: cover;
 }
-/*Mise en page de la flexbox "Activités"*/
+#miniatures_coeur
+{
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 3px 3px 2px rgb(232, 232, 232);
+  width: 100%;
+  height: 105px;
+}
+#miniatures_coeur img
+{
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  width: 100px;
+  height: 100px;
+  margin: 2px 0 0 3px;
+  object-fit: cover;
+}
+#miniatures_bleu
+{
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 3px 3px 2px rgb(232, 232, 232);
+  width: 100%;
+  height: 105px;
+}
+#miniatures_bleu img
+{
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  width: 100px;
+  height: 100px;
+  margin: 2px 0 0 3px;
+  object-fit: cover;
+}
+/*Mise en page de la flexbox "Activités"-----------------------------------------------------------------*/
 #bloc_imagesactivités /*grid images activités*/
 {
   width: 100%;
   display: grid;
   grid-gap: 30px;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(2, 270px);
+  grid-template-rows: 11em;
   grid-template-areas: 
   "port pomègues calanques garde"
+  "port pomègues calanques ."
   "port frioul calanques longchamp"
   ;
   margin-bottom: 30px;
@@ -270,37 +392,86 @@ h2
   border-top-right-radius: 10px;
   width: 100%;
 }
+figure
+{
+  border-radius: 10px;
+  box-shadow: 3px 3px 2px rgb(232, 232, 232);
+}
+figcaption
+{
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  font-size: 15px;
+  font-weight: bold;
+  padding-left: 10px;
+}
 .port
 {
   grid-area: port;
-  background-color: blueviolet;
+  background-color: white;
+  margin: 0;
+}
+.port img
+{
+  height: 310px;
+  object-fit: cover;
 }
 .pomègues
 {
   grid-area: pomègues;
-  background-color: crimson;
+  background-color: white;
+  margin: 0;
+}
+.pomègues img
+{
+  height: 150px
 }
 .frioul
 {
   grid-area: frioul;
-  background-color:greenyellow;
+  background-color:white;
+  margin: 0;
+}
+.frioul img
+{
+  height: 90px;
+  object-fit: cover;
 }
 .calanques
 {
   grid-area: calanques;
-  background-color: darkolivegreen;
+  background-color: white;
+  margin: 0;
+}
+.calanques img
+{
+  height: 310px;
+  object-fit: cover;
 }
 .garde
 {
   grid-area: garde;
-  background-color: deeppink;
+  background-color: white;
+  margin: 0;
+}
+.garde img
+{
+  height: 100px;
+  object-fit: cover;
 }
 .longchamp
 {
   grid-area: longchamp;
-  background-color:goldenrod;
+  background-color:white;
+  margin: 0;
+  grid-row-start: 2;
 }
-/*Footer mise en page*/
+.longchamp img
+{
+  height: 105px;
+  object-fit: cover;
+}
+/*Footer mise en page-----------------------------------------------------------------------------------*/
 footer
 {
    background-color: rgb(242, 242, 242); 
