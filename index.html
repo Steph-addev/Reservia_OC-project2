@@ -2,6 +2,7 @@
 <html lang="fr">
     <head>
         <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="reservia_CSS/reservia_style.css" type="text/css"/>
         <script src="https://kit.fontawesome.com/5536c87256.js" crossorigin="anonymous"></script>
         <title>Reservia</title>
@@ -11,34 +12,35 @@
     <div id="bloc_page">
         <header>
           <div id="bloc_logo_navigation">
-            <p><img src="images/logo/Reservia.svg" alt="logo_Reservia" class="logo"/></p>
+            <div id="logo"><img src="images/logo/Reservia.svg" alt="logo_Reservia"/></div>
             <nav>
                 <ul>
                     <li><a href="#bloc_Marseille">Hébergements</a></li>
                     <li><a href="#bloc_activités">Activités</a></li>
-                    <li><a href="#" class="suscribed">S'inscrire</a></li>
                 </ul>
             </nav>
+            <span  id="suscribed"><a href="#">S'inscrire</a></span>
           </div> <!-- Fin de div bloc_logo_navigation -->
         </header>
 
         <main>
-            <section>
+            <section id="bloc_filtre">
                 <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
-                <p id="policehead">En plein centre ville ou en pleine nature</p>
+                <p class="policehead">En plein centre ville ou en pleine nature</p>
 
                 <form method="post" action="#">
                     <div id="barre_recherche">
-                        <i class="fas fa-map-marker-alt"></i><input type="search" name="Rechercher" placeholder="Marseille, France"/> <button class="button_style" type="button">Rechercher</button>
+                        <span class="button_text"><i class="fas fa-map-marker-alt"></i><input type="search" name="Rechercher" placeholder="Marseille, France"/><button class="button_style" type="button">Rechercher</button></span>
+                        <span class="button_icon"><i class="fas fa-map-marker-alt"></i><input type="search" name="Rechercher" placeholder="Marseille, France"/><button class="button_style" type="button"><i class="fas fa-search"></i></button></span>
                     </div>
                     <div id="Filtres">
-                        <p>Filtres</p> 
-                        <div id="dollar"><span><i class="fas fa-money-bill-wave"></i></span><span class="economy"><a href="#">Economique</a></span></div>
-                        <div id="famille"><span><i class="fas fa-child"></i></span><span class="family"><a href="#">Familial</a></span></div>
-                        <div id="romantique"><span><i class="fas fa-heart"></i></span><span class="romance"><a href="#">Romantique</a></span></div>
-                        <div id="animaux"><span><i class="fas fa-dog"></i></span><span class="animals"><a href="#">Animaux autorisés</a></span></div>
+                        <div id="filter"><p>Filtres</p></div> 
+                        <div id="dollar" class="border_filter"><span><i class="fas fa-money-bill-wave"></i></span><span class="label_filter"><a href="#">Economique</a></span></div>
+                        <div id="famille" class="border_filter"><span><i class="fas fa-child"></i></span><span class="label_filter"><a href="#">Familial</a></span></div>
+                        <div id="romantique" class="border_filter"><span><i class="fas fa-heart"></i></span><span class="label_filter"><a href="#">Romantique</a></span></div>
+                        <div id="animaux" class="border_filter"><span><i class="fas fa-dog"></i></span><span class="label_filter"><a href="#">Animaux autorisés</a></span></div>
                     </div>
-                    <p><i class="fas fa-info-circle"></i> Plus de 500 logements sont disponibles dans cette ville</p>
+                    <p class="policehead"><i class="fas fa-info-circle"></i> Plus de 500 logements sont disponibles dans cette ville</p>
                 </form>
             </section>
 
@@ -48,33 +50,33 @@
                         <div id="bloc_imageMarseille">
                             <div class="miniatures_Marseille"><a href="images/hebergements/3_medium/La_Cannebière.jpg"><img src="images/hebergements/4_small/La_Cannebière.jpg" alt="Auberge La Cannebière"/>
                                     <h3> Auberge la Cannebière</h3>
-                                    <p class="police_Marseille">Nuit à partir de <strong>25€</strong></br>
-                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p></a>
+                                    <p class="police_Marseille">Nuit à partir de <strong>25€</strong></p>
+                                    <p class="police_Marseille"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p></a>
                             </div>
                             <div class="miniatures_Marseille"><a href="images/hebergements/3_medium/Le_port.jpg"><img src="images/hebergements/4_small/Hôtel_du_port.jpg" alt="Hôtel du port"/>
                                     <h3> Hôtel du port</h3>
-                                    <p class="police_Marseille">Nuit à partir de <strong>52€</strong></br>
-                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p></a>
+                                    <p class="police_Marseille">Nuit à partir de <strong>52€</strong></p>
+                                    <p class="police_Marseille"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p></a>
                             </div>
                             <div class="miniatures_Marseille"><a href="images/hebergements/3_medium/Les_mouettes.jpg"><img src="images/hebergements/4_small/Les_mouettes.jpg" alt="Hôtel les mouettes"/>
                                     <h3> Hôtel Les mouettes</h3>
-                                    <p class="police_Marseille">Nuit à partir de <strong>76€</strong></br>
-                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p></a>
+                                    <p class="police_Marseille">Nuit à partir de <strong>76€</strong></p>
+                                    <p class="police_Marseille"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p></a>
                             </div>
                             <div class="miniatures_Marseille"><a href="images/hebergements/3_medium/La_mer.jpg"><img src="images/hebergements/4_small/Hôtel_de_la_mer.jpg" alt="Hôtel de la mer"/>
                                     <h3> Hôtel de la mer</h3>
-                                    <p class="police_Marseille">Nuit à partir de <strong>46€</strong></br>
-                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p></a>
+                                    <p class="police_Marseille">Nuit à partir de <strong>46€</strong></p>
+                                    <p class="police_Marseille"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p></a>
                             </div>
                             <div class="miniatures_Marseille"><a href="images/hebergements/3_medium/Le_Panier.jpg"><img src="images/hebergements/4_small/Le_Panier.jpg" alt="Auberge Le Panier"/>
                                     <h3> Auberge le Panier</h3>
-                                    <p class="police_Marseille">Nuit à partir de <strong>23€</strong></br>
-                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p></a>
+                                    <p class="police_Marseille">Nuit à partir de <strong>23€</strong></p>
+                                    <p class="police_Marseille"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p></a>
                             </div>
                             <div class="miniatures_Marseille"><a href="images/hebergements/3_medium/Amina.jpg"><img src="images/hebergements/4_small/Amina.jpg" alt="Hôtel chez Amina"/>
                                     <h3> Hôtel chez Amina</h3>
-                                    <p class="police_Marseille">Nuit à partir de <strong>96€</strong></br>
-                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p></a>
+                                    <p class="police_Marseille">Nuit à partir de <strong>96€</strong></p>
+                                    <p class="police_Marseille"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p></a>
                             </div>
                         </div>      <!-- Fin de div bloc_imageMarseille -->
                             <p>Afficher plus</p>
@@ -83,25 +85,25 @@
                     <aside id="bloc_populaires">           
                         <h2 class="popular_title">Les plus populaires <i class="fas fa-chart-line"></i></h2>
                         <div id="bloc_imagePopulaires">                    
-                            <div id="miniatures_soleil">
+                            <div class="miniatures_populaires">
                                 <span><a href="images/hebergements/3_medium/Le_soleil_du_matin.jpg"><img src="images/hebergements/4_small/Le_soleil_du_matin.jpg" alt="Hôtel le soleil du matin"/></span>
                                 <div><h3> Hôtel Le soleil du matin</h3>
-                                <p class="police_Populaires">Nuit à partir de <strong>128€</strong></br>
-                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
+                                <p class="police_Populaires">Nuit à partir de <strong>128€</strong></p>
+                                <p class="police_Populaires"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
                                 </div></a>    
                             </div>
-                            <div id="miniatures_coeur">
+                            <div class="miniatures_populaires">
                                 <span><a href="images/hebergements/3_medium/Au_coeur_de_L'eau.jpg"><img src="images/hebergements/4_small/Au_coeur_de_l'eau.jpg" alt="Au coeur de l'eau"/></span>
                                 <div><h3> Au coeur de l'eau Chambres d'hôtes</h3>
-                                <p class="police_Populaires">Nuit à partir de <strong>71€</strong></br>
-                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
+                                <p class="police_Populaires">Nuit à partir de <strong>71€</strong></p>
+                                <p class="police_Populaires"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
                                 </div></a>
                             </div>
-                            <div id="miniatures_bleu">
+                            <div class="miniatures_populaires">
                                 <span><a href="images/hebergements/3_medium/Tout_bleu_et_Blanc.jpg"><img src="images/hebergements/4_small/Tout_bleu_et_Blanc.jpg" alt="Hôtel Tout Bleu et Blanc"/></span>
                                 <div><h3> Hôtel Tout Bleu et Blanc</h3>
-                                <p class="police_Populaires">Nuit à partir de <strong>68€</strong></br>
-                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
+                                <p class="police_Populaires">Nuit à partir de <strong>68€</strong></p>
+                                <p class="police_Populaires"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
                                 </div></a>
                             </div>
                         </div>    <!-- Fin de div bloc_imagePopulaires -->
