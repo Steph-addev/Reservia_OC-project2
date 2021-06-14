@@ -319,6 +319,10 @@ section
     border-top-right-radius: 10px;
     width: 100%;
   }
+.miniatures_activités_img
+  {
+    object-fit: cover;
+  }
 figure
   {
     border-radius: 10px;
@@ -648,6 +652,30 @@ h1
         border-top-right-radius: 20px;
         box-shadow: 3px 3px 8px 3px rgb(232, 232, 232);
       }
+      #port img
+    {
+      object-position: 75% 5%;
+    }
+    #pomègues img
+    {
+      object-position: 70% 40%;
+    }
+    #frioul img
+    {
+      object-position: 80% 0%;
+    }
+    #calanques img
+    {
+      object-position: 90% 0%;
+    }
+    #garde img
+    {
+      object-position:80% 30%;
+    }
+    #longchamp img
+    {
+      object-position: 80% 12%;
+    }
     figcaption
       {
         margin: 13px 0 0 10px;
@@ -825,6 +853,10 @@ h1
     {
       width: 85%;
     }
+  nav
+    {
+      padding-left: 210px;
+    }
   #bloc_Marseille
     {
       width:70%;
@@ -832,7 +864,8 @@ h1
     }
   .miniatures_Marseille
     {
-      height: 170px;
+      height: 48%;
+      width: 30%
     }
   #bloc_Marseille H3
     {
@@ -871,10 +904,6 @@ h1
 }
 @media only screen and (min-width:768px)
 {
-.miniatures_activités_img
-{
-  object-fit: cover;
-}
 #port
     {
       grid-area: port;
@@ -885,7 +914,7 @@ h1
   #port img
     {
       height: 270px;
-      object-position: 40% 80%;
+      object-position: 58% 0%;
     }
   #pomègues
     {
