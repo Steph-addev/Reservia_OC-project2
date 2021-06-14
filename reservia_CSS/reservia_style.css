@@ -1,9 +1,7 @@
-/*Mise en page générale*/
 #bloc_page
   {
     display: flex;
     flex-direction: column;
-    font-family: Raleway ExtraBold Italic;
     margin: auto;
   }
 header
@@ -62,16 +60,6 @@ a
     width:100%;
     height:100%;
   }
-h1
-  {
-    font-size: 22px;
-    font-family: Raleway Bold;
-  }
-.police_nature
-  {
-    font-size: 16px;
-    margin-bottom: 25px;
-  }
 #barre_recherche
   {
     display: flex;
@@ -79,16 +67,19 @@ h1
     align-items: center;
     margin-top: 20px;
   }
+#barre_recherche *
+  {
+    line-height:40px;
+    height:41px;
+  }
 .fas.fa-map-marker-alt
   {
     background-color: rgb(242, 242, 242);
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
-    height: 40px;
-    width: 40px;
+    width: 50px;
     text-align: center;
     vertical-align: top;
-    line-height:40px;
   }
 input
   {
@@ -96,10 +87,10 @@ input
     border-bottom: 1px rgb(242, 242, 242) solid;
     border-left: none;
     border-right: none;
-    height: 40px;
+    width:221px;
     font-weight: bold;
   }
-input::placeholder
+::placeholder
   {
     color: black;
     padding-left: 5px;
@@ -115,9 +106,11 @@ button
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
     width: 120px;
-    height: 40px;
     border: none;
     text-align: center;
+    font-size: 15px;
+    font-family:Raleway Medium;
+
   }
 .button_icon
   {
@@ -126,30 +119,23 @@ button
 #Filtres
   {
     display: flex;
-    align-items: flex-start;
     justify-content: space-between;
-    margin-top: 30px;
-    margin-bottom: 10px;
+    margin: 26px 0 10px 0;
     text-align:center;
-    flex-wrap: wrap;
-    width: 70%;
-    font-size: 15px;
     font-weight: bold;
     line-height: 36px;
-  }
-#Filtres a:hover
-  {
-    color:#0065fc;
-    text-decoration: underline;
-  }
+    margin-right:200px;
+   }
 #Filtres i
   {
     color: #0065fc;
     background-color: rgb(222, 235, 255);
-    width: 40px;
-    height: 40px;
-    border-radius: 20px;
-    line-height: 36px;
+    width: 45px;
+    height: 45px;
+    margin-left: -10px;
+    margin-top: -2px;
+    border-radius: 25px;
+    line-height: 40px;
   }
 .border_filter
   {
@@ -160,7 +146,13 @@ button
     font-weight: bold;
     justify-content: space-between;
     text-align: center;
-    margin-right:10px;
+  }
+.border_filter:hover
+  {
+    transform: rotate(1turn);
+    transition-property: margin-left;
+    transition-duration: 4s;
+    background-color: rgb(222, 235, 255);
   }
 .border_filter i
   {
@@ -172,21 +164,27 @@ button
     padding-right: 15px;
     align-items: baseline;
   }
+#filter p
+  {
+    margin-top: 4px;
+    margin-bottom: 8px;
+    margin-right:10px;
+  }
 #dollar
   {
-    width: 131px;
+    width: 145px;
   }
 #famille
   {
-    width: 110px;
+    width: 115px;
   }
 #romantique
   {
-    width: 133px;
+    width: 141px;
   }
 #animaux 
   {
-    width: 169px;
+    width: 183px;
   }
 #information
   {
@@ -205,13 +203,6 @@ button
     font-size: 10px;
     text-align: center;
     margin-right: 10px;
-  }
-.police_500logements
-  {
-    margin-bottom:40px;
-    margin-top: 30px;
-    font-family: Raleway ExtraBold Italic;
-    font-size: 16px;
   }
 section
   {
@@ -232,6 +223,10 @@ section
   {
     color: rgb(204, 204, 204);
   }
+.stars
+{
+  margin-top: 20px !important;
+}
 #bloc_Marseille
   {
     display: flex;
@@ -311,12 +306,12 @@ section
     display: grid;
     grid-gap: 30px;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 0,5fr 0fr 0,5fr 0fr;
+    grid-template-rows: 0.5fr 0fr 0.5fr 0fr;
     grid-template-areas: 
     "port pomègues calanques garde"
     "port pomègues calanques ."
     "port frioul calanques longchamp";
-    margin-bottom: 30px;
+    margin-bottom: 20px;
   }
 #bloc_imagesactivités img /*Format images activités*/
   {
@@ -333,84 +328,118 @@ figcaption
   {
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
-    font-size: 15px;
+    font-size: 0.77em;
     font-weight: bold;
-    padding-left: 10px;
+    margin-left: 15px;
+    margin-top: 5px;
+    height:25px;
   }
 footer
   {
    background-color: rgb(242, 242, 242); 
    display: flex;
-   justify-content: space-around;
+   justify-content: space-evenly;
+
   }
 /*Mise en page - Polices et Sizes*/
 @font-face 
   {
-    font-family: 'Raleway ExtraBold Italic';
+    font-family: 'Raleway SemiBold';
     font-style: normal;
     font-weight: normal;
-    src: local('Raleway ExtraBold Italic'), url('Raleway-ExtraBoldItalic.woff') format('woff');
+    src: local('Raleway SemiBold'), url('font_raleway/Raleway-SemiBold.woff') format('woff');
   }
 @font-face 
   {
-    font-family: 'Raleway Bold';
+    font-family: 'Raleway Medium';
     font-style: normal;
     font-weight: normal;
-    src: local('Raleway Bold'), url('Raleway-Bold.ttf') format('ttf');
+    src: local('Raleway Medium'), url('font_raleway/Raleway-Medium.woff') format('woff');
   }
-.police_plus
+h1
+  {
+    font-size: 20px;
+    font-family: Raleway SemiBold;
+    margin-bottom:8px;
+  }
+.H2_size
+  {
+    font-size: 16px;
+    font-family: 'Raleway SemiBold';
+  }
+.raleway_medium
+  {
+    font-family:Raleway Medium;
+  }
+.raleway14
+ {
+   font-size: 14px;
+ }
+.raleway13
 {
-  margin: 0 0 40px 30px;
-  font-weight: bold;
-  font-size: 14px;
+  font-size: 13px;
 }
-.texte_populaires
+.raleway12
 {
-  display:flex;
-  flex-direction: column;
-  justify-content: flex-start;
+  font-size: 12px;
 }
-.police_Marseille
-{
-      margin: 4px 0 0 12px;
-      padding: 1px;
-      font-family: Verdana, Geneva, Tahoma, sans-serif;
-      font-size: 13px;
-}
-#bloc_Marseille h3
-{
-  font-size: 15px;
-  margin: 6px 0 0 10px;
-}
-.police_Populaires
-{
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 10px;
-  margin: 2px 10px 5px 10px;
-}
-#aside_populaires h3
-{
-  font-size: 15px;
-  margin: 10px 30px 5px 10px;
-}
-h2
-{
-  font-size: 22px;
-  padding: 20px 0 0 30px;
-}
-#filter p
-{
-  margin-top: 4px;
-  margin-bottom: 8px;
-}
+.raleway_semibold
+  {
+    font-family: Raleway SemiBold;
+    font-size: 0.85em;
+  }
+.marges_nature
+  {
+    margin-bottom: 20px;
+    margin-top:0;
+  }
+.marges_500logements
+  {
+    margin-bottom:40px;
+    margin-top: 30px;
+  }
+.housing_title
+  {
+    padding: 15px 0 0 25px;
+    margin-bottom:7px;
+  }
 .popular_title
-{
- display:flex;
- flex-direction: row;
- justify-content: space-between;
- align-items: baseline;
- margin: 13px 30px 10px 7px;
-}
+  {
+   display:flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: baseline;
+   padding: 15px 20px 0 20px;
+   margin-bottom:0;
+  }
+.activity_title
+  {
+    margin-top:50px;
+  }
+.marges_plus
+  {
+    margin: 0 0 40px 30px;
+    font-weight: bold;
+  }
+.texte_populaires
+  {
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+.marges_Marseille
+  {
+    margin: 4px 0 0 12px;
+    padding: 1px;
+  }
+.marges_Populaires
+  {
+    margin: 2px 10px 5px 10px;
+  }
+#aside_populaires h3
+  {
+    margin: 10px 25px 5px 10px;
+  }
 /*Media queries-----------------------------------------------------------------------------------------------*/
 @media only screen and (min-width:320px) and (max-width: 767px) /*Format mobile*/
   {
@@ -435,7 +464,6 @@ h2
     #logo
       {
         margin-left: 20px;
-        padding-bottom: 17px;
       }
     nav
       {
@@ -451,13 +479,12 @@ h2
       }
     li
       {
-        padding-left: 14%;
-        padding-bottom: 10px;
+        padding-left: 12%;
       }
     li a:hover
       {
         border-bottom: 2px #0065fc solid;
-        padding-bottom: 10px;
+        padding-bottom: 19px;
         color: #0065fc;
         border-top: none;
       }
@@ -468,21 +495,7 @@ h2
         line-height: 60px;
         font-size:15px;
       }
-    h1
-      {
-        font-size: 25px;
-        font-family: Raleway Bold;
-        margin: 11px 0 12px 0;
-      }
-    .police_nature
-      {
-        margin: 8px 0 35px 0;
-      }
-    .fas.fa-map-marker-alt
-      {
-        height: 45px;
-      }
-    input
+    #barre_recherche *
       {
         height: 45px;
       }
@@ -492,8 +505,7 @@ h2
         border-bottom-right-radius: 10px;
         border-bottom-left-radius: 10px;
         border-top-left-radius: 10px;
-        width: 40px;
-        height:40px;
+        width: 45px;
         background-color: #0065fc;
         color: white;
         text-align: center;
@@ -519,14 +531,13 @@ h2
     #Filtres
       {
         width:100%;
+        flex-wrap: wrap;
       }
     #Filtres i
       {
         width: 50px;
         height: 50px;
         border-radius: 40px;
-        margin-left: -10px;
-        margin-top: -2px;
         font-size: 20px;
         line-height: 46px;
       }
@@ -640,21 +651,53 @@ h2
     figcaption
       {
         margin: 13px 0 0 10px;
-        font-size:16px;
+        font-size: 1em;
       }
     footer 
       {
         flex-direction: column;
         padding-left:25px;
       }
-    
-    .police_Populaires
+    h1
+      {
+        font-size: 22px;
+        margin: 11px 0 12px 0;
+      }
+    .H2_size
+      {
+        font-size:22px;
+      }
+    .raleway14
+      {
+        font-size:16px;
+      }
+    .raleway12
+      {
+        font-size: 13px;
+      }
+    .raleway_semibold
+    {
+      font-size: 0.9em;
+    }
+    .raleway13
+    {
+      font-size: 16px;
+    }
+    .raleway_semibold
+      {
+        font-size:0.95em;
+        font-weight: bold;
+      }
+    .marges_nature
+      {
+        margin: 8px 0 35px 0;
+      }
+    .marges_Populaires
       {
         font-size: 13px;
       }
     h2
       {
-        font-size: 22px;
         padding-left: 25px;
         margin-bottom:10px;
         margin-top:20px;
@@ -662,11 +705,6 @@ h2
     #bloc_Marseille h3
       {
         margin: 6px 0 0 15px;
-        font-size: 15px;
-      }
-    #aside_populaires h3
-      {
-        font-size:15px;
       }
     .texte_populaires
       {
@@ -674,18 +712,15 @@ h2
       }
     .stars
       {
-        margin-top: 30px;
+        margin-top: 35px !important;
       }
-    .police_Marseille
+    .marges_Marseille
       {
         margin: 4px 0 0 12px;
         padding: 1px;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        font-size: 13px;
       }
-    .police_500logements
+    .marges_500logements
       {
-        font-size:18px;
         margin-top:15px;
         margin-bottom:25px;
       }
@@ -694,16 +729,15 @@ h2
         padding-left: 15px;
         margin:20px 18px 20px 7px;
       }
-    .police_plus
+    .marges_plus
       {
-        font-size:18px;
         margin-top:10px;
         margin-bottom: 15px;
       }
   }     
 @media only screen and (min-width:768px) and (max-width:1023px) /*Format tablette et petit écran*/
 {
-    #bloc_page
+  #bloc_page
     {
       width:90%;
     }
@@ -715,16 +749,16 @@ h2
     {
       width: 100%;
       margin-right: 20px;
-    }
-  .label_filter
-    {
-      font-size:13px;
-      padding-right: 7px;
+      flex-wrap: wrap;
     }
   #section_hébergements
     {
       flex-direction: column-reverse;
-    }  
+    }
+  .stars
+    {
+      margin-top:30px !important;
+    }
   #aside_populaires
     {
       width: 100%;
@@ -742,75 +776,6 @@ h2
   #bloc_Marseille
     {
       width: 100%;
-    }
-  #port
-    {
-      grid-area: port;
-      background-color: white;
-      margin: 0;
-      grid-row-end: 4;
-    }
-  #port img
-    {
-      height: 295px;
-      object-fit: cover;
-    }
-  #pomègues
-    {
-      grid-area: pomègues;
-      background-color: white;
-      margin: 0;
-      grid-row-end: 3;
-    }
-  #pomègues img
-    {
-      height: 155px
-    }
-  #frioul
-    {
-      grid-area: frioul;
-      background-color:white;
-      margin: 0;
-      grid-row-start: 3;
-    }
-  #frioul img
-    {
-      height: 85px;
-      object-fit: cover;
-    }
-  #calanques
-    {
-      grid-area: calanques;
-      background-color: white;
-      margin: 0;
-    }
-  #calanques img
-    {
-      height: 295px;
-      object-fit: cover;
-    }
-  #garde
-    {
-      grid-area: garde;
-      background-color: white;
-      margin: 0;
-    }
-  #garde img
-    {
-      height: 100px;
-      object-fit: cover;
-    }
-  #longchamp
-    {
-      grid-area: longchamp;
-      background-color:white;
-      margin: 0;
-      grid-row-start: 2;
-    }
-  #longchamp img
-    {
-      height: 150px;
-      object-fit: cover;
     }
   #aside_populaires h3
     {
@@ -836,15 +801,6 @@ h2
     {
       display: none;
     }
-  #Filtres
-    {
-      width:100%;
-      justify-content: flex-start;
-    }
-  .label_filter
-    {
-      font-size:13px;
-    }
   #bloc_Marseille
     {
       width: 67%;
@@ -858,103 +814,68 @@ h2
     {
       height: 105px;
     }
-  #port
-    {
-      grid-area: port;
-      background-color: white;
-      margin: 0;
-      grid-row-end: 4;
-    }
-  #port img
-    {
-      height: 295px;
-      object-fit: cover;
-    }
-  #pomègues
-    {
-      grid-area: pomègues;
-      background-color: white;
-      margin: 0;
-      grid-row-end: 3;
-    }
-  #pomègues img
-    {
-      height: 145px
-    }
-  #frioul
-    {
-      grid-area: frioul;
-      background-color:white;
-      margin: 0;
-      grid-row-start: 3;
-    }
-  #frioul img
-    {
-      height: 85px;
-      object-fit: cover;
-    }
-  #calanques
-    {
-      grid-area: calanques;
-      background-color: white;
-      margin: 0;
-    }
-  #calanques img
-    {
-      height: 295px;
-      object-fit: cover;
-    }
-  #garde
-    {
-      grid-area: garde;
-      background-color: white;
-      margin: 0;
-    }
-  #garde img
-    {
-      height: 100px;
-      object-fit: cover;
-    }
-  #longchamp
-    {
-      grid-area: longchamp;
-      background-color:white;
-      margin: 0;
-      grid-row-start: 2;
-    }
-  #longchamp img
-    {
-      height: 150px;
-      object-fit: cover;
-    }
-  h2
-    {
-      font-size: 18px;
-    }
   #bloc_Marseille h3
     {
       margin: 2px 0 0 12px;
-      font-size: 14px;
-    }
-  .police_Marseille
-    {
-      margin: 4px 0 0 12px;
-      padding: 1px;
-      font-family: Verdana, Geneva, Tahoma, sans-serif;
-      font-size: 10px;
     }
 }
 @media only screen and (min-width:1440px) and (max-width:2000px) /*Grand écran*/
 {
   #bloc_page
     {
-      width: 80%;
+      width: 85%;
+    }
+  #bloc_Marseille
+    {
+      width:70%;
+      margin-right: 30px;
     }
   .miniatures_Marseille
-  {
-    height: 170px;
-  }
-  #port
+    {
+      height: 170px;
+    }
+  #bloc_Marseille H3
+    {
+      margin: 10px 0 5px 15px;
+    }
+  .marges_Marseille
+    {
+      margin: 4px 0 0 15px;
+      padding: 1px;
+    }
+  #aside_populaires
+    {
+      width: 30%;
+    }
+  .miniatures_populaires
+    {
+      height: 120px;
+    }
+  .miniatures_populaires img
+    {
+      height: 115px;
+      width: 100px;
+    }
+  #Filtres
+    {
+      width:70%;
+    }
+  .raleway13
+    {
+      font-size:15px;
+    }
+  .raleway12
+    {
+      font-size: 13px;
+    }
+}
+@media only screen and (min-width:768px)
+{
+.miniatures_activités_img
+{
+  object-fit: cover;
+}
+#port
     {
       grid-area: port;
       background-color: white;
@@ -963,8 +884,8 @@ h2
     }
   #port img
     {
-      height: 295px;
-      object-fit: cover;
+      height: 270px;
+      object-position: 40% 80%;
     }
   #pomègues
     {
@@ -975,7 +896,8 @@ h2
     }
   #pomègues img
     {
-      height: 145px
+      height: 130px;
+      object-position: 30% 45%;
     }
   #frioul
     {
@@ -986,8 +908,8 @@ h2
     }
   #frioul img
     {
-      height: 85px;
-      object-fit: cover;
+      height: 75px;
+      object-position: 50% 25%;
     }
   #calanques
     {
@@ -997,8 +919,7 @@ h2
     }
   #calanques img
     {
-      height: 295px;
-      object-fit: cover;
+      height: 270px;
     }
   #garde
     {
@@ -1009,7 +930,7 @@ h2
   #garde img
     {
       height: 100px;
-      object-fit: cover;
+      object-position:top;
     }
   #longchamp
     {
@@ -1020,7 +941,7 @@ h2
     }
   #longchamp img
     {
-      height: 150px;
-      object-fit: cover;
+      height: 107px;
+      object-position: 50% 20%;
     }
 }
