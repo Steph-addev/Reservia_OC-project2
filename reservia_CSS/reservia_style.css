@@ -1,8 +1,35 @@
 #bloc_page
   {
-    display: flex;
     flex-direction: column;
     margin: auto;
+  }
+.flexbox
+  {
+    display: flex;
+  }
+.colorblue
+  {
+    color:#0065FC;
+  }
+.backgroundblue
+  {
+    background-color: #0065FC;
+  }
+.colorwhite
+  {
+    color:white;
+  }
+.backgroundwhite
+  {
+    background-color: white;
+  }
+.backgroundgray
+{
+  background-color: rgb(242, 242, 242); 
+}
+.borderradius10
+  {
+    border-radius: 10px;
   }
 header
   {
@@ -26,7 +53,6 @@ nav
   }
 nav ul
   {
-    display: flex;
     margin-top: 10px;
   }
 li
@@ -43,7 +69,6 @@ li a:hover
   }
 #suscribed
   {
-    color: #0065FC;
     font-weight: bold;
     grid-column-start: 5;
     line-height: 71px;
@@ -62,7 +87,6 @@ a
   }
 #barre_recherche
   {
-    display: flex;
     justify-content:flex-start;
     align-items: center;
     margin-top: 20px;
@@ -74,7 +98,6 @@ a
   }
 .fas.fa-map-marker-alt
   {
-    background-color: rgb(242, 242, 242);
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
     width: 50px;
@@ -101,8 +124,6 @@ button
   }
 .button_text
   {
-    background-color: #0065fc;
-    color: white;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
     width: 120px;
@@ -118,7 +139,6 @@ button
   }
 #Filtres
   {
-    display: flex;
     justify-content: space-between;
     margin: 26px 0 10px 0;
     text-align:center;
@@ -128,7 +148,6 @@ button
    }
 #Filtres i
   {
-    color: #0065fc;
     background-color: rgb(222, 235, 255);
     width: 45px;
     height: 45px;
@@ -139,7 +158,6 @@ button
   }
 .border_filter
   {
-    display: flex;
     border: 2px rgb(217, 217, 217) solid;
     border-radius: 23px;
     height: 40px;
@@ -188,13 +206,11 @@ button
   }
 #information
   {
-    display: flex;
     flex-direction: row;
     align-items:baseline;
   }
 .info_icon i
   {
-    color: #0065FC;
     border: 2px rgb(242, 242, 242) solid;
     padding: 5px;
     width: 10px;
@@ -211,13 +227,8 @@ section
   }
 #section_hébergements
   {
-    display: flex;
     flex-direction: row;
     justify-content: space-between;
-  }
-.blue_star
-  {
-    color:#0065FC;
   }
 .gray_star
   {
@@ -229,17 +240,13 @@ section
 }
 #bloc_Marseille
   {
-    display: flex;
     flex-direction: column;
-    background-color: rgb(242, 242, 242);
-    border-radius: 10px;
     width: 80%;
     min-width: 272px;
     margin-right: 15px;
   }
 #bloc_imageMarseille
   {
-    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -248,13 +255,10 @@ section
   }
 .miniatures_Marseille /*Images background*/
   {
-    background-color: white;
     width: 30%;
     height: 150px;
-    border-radius: 10px;
     box-shadow: 3px 3px 8px 3px rgb(232, 232, 232);
     margin-bottom: 20px;
-    object-fit: cover;
   }
 .miniatures_Marseille img /*Images miniatures*/
   {
@@ -268,15 +272,11 @@ section
   }
 #aside_populaires
   {
-    display: flex;
     flex-direction: column;
-    background-color: rgb(242, 242, 242);
-    border-radius: 10px;
     width: 30%;
   }
 #bloc_imagePopulaires
   {
-    display: flex;
     flex-direction: column;
     justify-content: space-around;
     margin: 7px 30px 10px 30px;
@@ -284,10 +284,7 @@ section
   }
 .miniatures_populaires
   {
-    display: flex;
     flex-direction: row;
-    background-color: white;
-    border-radius: 10px;
     box-shadow: 3px 3px 2px rgb(232, 232, 232);
     width: 100%;
     height: 105px;
@@ -325,7 +322,6 @@ section
   }
 figure
   {
-    border-radius: 10px;
     box-shadow: 3px 3px 2px rgb(232, 232, 232);
   }
 figcaption
@@ -340,8 +336,6 @@ figcaption
   }
 footer
   {
-   background-color: rgb(242, 242, 242); 
-   display: flex;
    justify-content: space-evenly;
 
   }
@@ -409,7 +403,6 @@ h1
   }
 .popular_title
   {
-   display:flex;
    flex-direction: row;
    justify-content: space-between;
    align-items: baseline;
@@ -425,9 +418,8 @@ h1
     margin: 0 0 40px 30px;
     font-weight: bold;
   }
-.texte_populaires
+#texte_populaires
   {
-    display:flex;
     flex-direction: column;
     justify-content: flex-start;
   }
@@ -505,13 +497,7 @@ h1
       }
     .fas.button_icon_style
       {
-        border-top-right-radius: 10px;
-        border-bottom-right-radius: 10px;
-        border-bottom-left-radius: 10px;
-        border-top-left-radius: 10px;
         width: 45px;
-        background-color: #0065fc;
-        color: white;
         text-align: center;
         line-height: 40px;
       }
@@ -907,7 +893,6 @@ h1
 #port
     {
       grid-area: port;
-      background-color: white;
       margin: 0;
       grid-row-end: 4;
     }
@@ -919,7 +904,6 @@ h1
   #pomègues
     {
       grid-area: pomègues;
-      background-color: white;
       margin: 0;
       grid-row-end: 3;
     }
@@ -931,7 +915,6 @@ h1
   #frioul
     {
       grid-area: frioul;
-      background-color:white;
       margin: 0;
       grid-row-start: 3;
     }
@@ -943,7 +926,6 @@ h1
   #calanques
     {
       grid-area: calanques;
-      background-color: white;
       margin: 0;
     }
   #calanques img
@@ -953,7 +935,6 @@ h1
   #garde
     {
       grid-area: garde;
-      background-color: white;
       margin: 0;
     }
   #garde img
@@ -964,7 +945,6 @@ h1
   #longchamp
     {
       grid-area: longchamp;
-      background-color:white;
       margin: 0;
       grid-row-start: 2;
     }
