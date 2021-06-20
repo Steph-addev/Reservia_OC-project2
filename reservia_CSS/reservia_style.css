@@ -303,7 +303,7 @@ section
     display: grid;
     grid-gap: 30px;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 0.5fr 0fr 0.5fr 0fr;
+    grid-template-rows: 9em 0fr 8em 0fr;
     grid-template-areas: 
     "port pomègues calanques garde"
     "port pomègues calanques ."
@@ -324,7 +324,7 @@ figure
   {
     box-shadow: 3px 3px 2px rgb(232, 232, 232);
   }
-figcaption
+.legendes
   {
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
@@ -333,11 +333,6 @@ figcaption
     margin-left: 15px;
     margin-top: 5px;
     height:25px;
-  }
-footer
-  {
-   justify-content: space-evenly;
-
   }
 /*Mise en page - Polices et Sizes*/
 @font-face 
@@ -418,7 +413,7 @@ h1
     margin: 0 0 40px 30px;
     font-weight: bold;
   }
-#texte_populaires
+.texte_populaires
   {
     flex-direction: column;
     justify-content: flex-start;
@@ -437,7 +432,7 @@ h1
     margin: 10px 25px 5px 10px;
   }
 /*Media queries-----------------------------------------------------------------------------------------------*/
-@media only screen and (min-width:320px) and (max-width: 767px) /*Format mobile*/
+@media only screen and (max-width: 767px) /*Format mobile*/
   {
     body
       {
@@ -446,6 +441,7 @@ h1
     #bloc_page
       {
         width:100%;
+
       }
     header
       {
@@ -473,16 +469,26 @@ h1
         border-bottom: 3px rgb(242,242,242) solid;
         padding-left: 0px;
       }
-    li
-      {
-        padding-left: 12%;
-      }
     li a:hover
       {
         border-bottom: 2px #0065fc solid;
-        padding-bottom: 19px;
+        padding-bottom: 17px;
         color: #0065fc;
         border-top: none;
+      }
+    li
+      {
+        margin-right:0px;
+        padding-left: 2%;
+      }
+    .nav_link
+      {
+        padding:35px;
+        
+      }
+    .nav_activity
+      {
+        padding:55px;
       }
     #suscribed
       {
@@ -575,12 +581,17 @@ h1
       {
         width: 100%;
         background-color: white;
+        
       }
     .miniatures_Marseille
       {
         width:93%;
         height: 200px;
         margin-bottom: 13px;
+      }
+    #bloc_imageMarseille
+      {
+        justify-content: center;
       }
     .miniatures_Marseille img
       {
@@ -593,6 +604,10 @@ h1
         width: 100%;
         border-radius: unset;
         margin: 0;
+      }
+    .aside_box
+      {
+        margin:0;
       }
     #bloc_imagePopulaires
       {
@@ -638,7 +653,11 @@ h1
         border-top-right-radius: 20px;
         box-shadow: 3px 3px 8px 3px rgb(232, 232, 232);
       }
-      #port img
+    .miniatures
+      {
+        max-width: 365px;
+      }
+    #port img
     {
       object-position: 75% 5%;
     }
@@ -662,12 +681,12 @@ h1
     {
       object-position: 80% 12%;
     }
-    figcaption
+    .legendes
       {
         margin: 13px 0 0 10px;
         font-size: 1em;
       }
-    footer 
+    #footer_margin
       {
         flex-direction: column;
         padding-left:25px;
@@ -720,13 +739,17 @@ h1
       {
         margin: 6px 0 0 15px;
       }
+    #aside_populaires h3
+      {
+        margin-right:10px;
+      }
     .texte_populaires
       {
-        margin: 10px 10px 0 10px;
+        margin: 0 10px 0 10px;
       }
     .stars
       {
-        margin-top: 35px !important;
+        margin-top: 45px !important;
       }
     .marges_Marseille
       {
@@ -771,7 +794,7 @@ h1
     }
   .stars
     {
-      margin-top:30px !important;
+      margin-top:35px !important;
     }
   #aside_populaires
     {
@@ -783,33 +806,80 @@ h1
       margin-bottom:30px
     }
   .miniatures_populaires
-   {
-     margin-bottom: 20px;
-   }
-
+    {
+      margin-bottom: 20px;
+      height: 125px;
+    }
+  .miniatures_populaires img
+    {
+      width: 105px;
+      height: 115px;
+      margin:5px 0 0 5px;
+    }
   #bloc_Marseille
     {
       width: 100%;
     }
+  #bloc_imagesactivités
+    {
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      grid-template-areas: 
+      "port pomègues calanques"
+      "garde frioul longchamp";
+      grid-gap: 20px;
+      margin-bottom: 40px;
+    }
+  .miniatures_activités
+    {
+      width:100%;
+      height: 150px;
+    }
+  .miniatures_activités_img
+    {
+      height: 120px;
+    }
+  figure
+    {
+      margin:0;
+    }
+  .activity_title
+    {
+      margin-top: 40px;
+      margin-bottom: 20px;
+    }
+  .popular_title
+    {
+      margin-bottom: 14px;
+    }
   #aside_populaires h3
     {
       font-size: 14px;
+      margin-top: 15px;
     }
   .police_Populaires
     {
       font-size:12px;
+    }
+  .marges_Populaires
+    {
+      margin-top:10px;
     }
   #bloc_Marseille h3
     {
       margin: 2px 0 0 12px;
       font-size: 14px;
     }
+  #footer_margin
+    {
+      justify-content: space-evenly;
+    }
 }
 @media only screen and (min-width:1024px) and (max-width:1439px) /*Ecran moyen*/
 {
   #bloc_page
     {
-      width: 99%;
+      width: 1000px;
     }
   .button_icon
     {
@@ -832,12 +902,20 @@ h1
     {
       margin: 2px 0 0 12px;
     }
+  #footer_margin
+    {
+      width: 950px;
+    }
+  .footer_credits
+    {
+      padding-right:140px;
+    }
 }
-@media only screen and (min-width:1440px) and (max-width:2000px) /*Grand écran*/
+@media only screen and (min-width:1440px) /*Grand écran*/
 {
   #bloc_page
     {
-      width: 85%;
+      width: 1200px;
     }
   nav
     {
@@ -887,8 +965,20 @@ h1
     {
       font-size: 13px;
     }
+  #bloc_imagesactivités
+    {
+    grid-template-rows: 10em 0fr 9em 0fr;
+    }
+  #footer_margin
+    {
+      width: 1150px;
+    }
+  .footer_credits
+    {
+      padding-right:200px;
+    }
 }
-@media only screen and (min-width:768px)
+@media only screen and (min-width:1024px)
 {
 #port
     {
@@ -898,7 +988,7 @@ h1
     }
   #port img
     {
-      height: 270px;
+      height: 88%;
       object-position: 58% 0%;
     }
   #pomègues
@@ -909,7 +999,7 @@ h1
     }
   #pomègues img
     {
-      height: 130px;
+      height: 76%;
       object-position: 30% 45%;
     }
   #frioul
@@ -920,7 +1010,7 @@ h1
     }
   #frioul img
     {
-      height: 75px;
+      height: 65%;
       object-position: 50% 25%;
     }
   #calanques
@@ -930,7 +1020,7 @@ h1
     }
   #calanques img
     {
-      height: 270px;
+      height: 88%;
     }
   #garde
     {
@@ -939,7 +1029,7 @@ h1
     }
   #garde img
     {
-      height: 100px;
+      height: 70%;
       object-position:top;
     }
   #longchamp
@@ -950,7 +1040,12 @@ h1
     }
   #longchamp img
     {
-      height: 107px;
+      height: 73%;
       object-position: 50% 20%;
+    }
+  #footer_margin
+    {
+      flex-direction: row;
+      margin: auto;
     }
 }
