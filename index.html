@@ -24,7 +24,7 @@
                         </ul>
                     </nav>
                     <span  id="suscribed" class="colorblue raleway_medium raleway14">
-                        <a href="#">S'inscrire</a>
+                        <a href="#" class="suscribed">S'inscrire</a>
                     </span>
             </div> <!-- Fin de div bloc_logo_navigation -->
         </header>
@@ -43,8 +43,8 @@
                             <input class="raleway_semibold" type="search" name="Rechercher" placeholder="Marseille, France"/>
                         </span>
                         <span>
-                            <button class="button_text backgroundblue colorwhite" type="button">Rechercher</button>
-                            <button class="button_icon" type="button">
+                            <button class="button_text backgroundblue colorwhite" type="submit">Rechercher</button>
+                            <button class="button_icon" type="submit">
                                 <i class="fas fa-search button_icon_style backgroundblue colorwhite borderradius10"></i>
                             </button>
                         </span>
@@ -99,7 +99,7 @@
                     <div id="bloc_Marseille" class="flexbox borderradius10 backgroundgray">
                         <h2 class="housing_title H2_size">Hébergements à Marseille</h2>
                     <div id="bloc_imageMarseille" class="flexbox">
-                        <article class="miniatures_Marseille raleway_medium raleway12 backgroundwhite borderradius10 miniatures">
+                        <article class="miniatures_Marseille raleway_medium raleway12 backgroundwhite borderradius10 miniatures card">
                             <a href="#" class="links">
                                 <img src="images/hebergements/4_small/La_Cannebière.jpg" alt="Auberge La Cannebière"/>
                                 <h3 class="raleway13"> Auberge la Cannebière</h3>
@@ -109,7 +109,7 @@
                                 </p>
                             </a>
                         </article>
-                        <article class="miniatures_Marseille raleway_medium raleway12 backgroundwhite borderradius10 miniatures">
+                        <article class="miniatures_Marseille raleway_medium raleway12 backgroundwhite borderradius10 miniatures card">
                             <a href="#" class="links">
                                 <img src="images/hebergements/4_small/Hôtel_du_port.jpg" alt="Hôtel du port"/>
                                 <h3 class="raleway13"> Hôtel du port</h3>
@@ -119,7 +119,7 @@
                                 </p>
                             </a>
                         </article>
-                        <article class="miniatures_Marseille raleway_medium raleway12 backgroundwhite borderradius10 miniatures">
+                        <article class="miniatures_Marseille raleway_medium raleway12 backgroundwhite borderradius10 miniatures card">
                             <a href="#" class="links">
                                 <img src="images/hebergements/4_small/Les_mouettes.jpg" alt="Hôtel les mouettes"/>
                                 <h3 class="raleway13"> Hôtel Les mouettes</h3>
@@ -129,7 +129,7 @@
                                 </p>
                             </a>
                         </article>
-                        <article class="miniatures_Marseille raleway_medium raleway12 backgroundwhite borderradius10 miniatures">
+                        <article class="miniatures_Marseille raleway_medium raleway12 backgroundwhite borderradius10 miniatures card">
                             <a href="#" class="links">
                                 <img src="images/hebergements/4_small/Hôtel_de_la_mer.jpg" alt="Hôtel de la mer"/>
                                 <h3 class="raleway13"> Hôtel de la mer</h3>
@@ -139,7 +139,7 @@
                                 </p>
                             </a>
                         </article>
-                        <article class="miniatures_Marseille raleway_medium raleway12 backgroundwhite borderradius10 miniatures">
+                        <article class="miniatures_Marseille raleway_medium raleway12 backgroundwhite borderradius10 miniatures card">
                             <a href="#" class="links">
                                 <img src="images/hebergements/4_small/Le_Panier.jpg" alt="Auberge Le Panier"/>
                                 <h3 class="raleway13"> Auberge le Panier</h3>
@@ -149,7 +149,7 @@
                                 </p>
                             </a>
                         </article>
-                        <article class="miniatures_Marseille raleway_medium raleway12 backgroundwhite borderradius10 miniatures">
+                        <article class="miniatures_Marseille raleway_medium raleway12 backgroundwhite borderradius10 miniatures card">
                             <a href="#" class="links">
                                 <img src="images/hebergements/4_small/Amina.jpg" alt="Hôtel chez Amina"/>
                                 <h3 class="raleway13"> Hôtel chez Amina</h3>
@@ -160,13 +160,13 @@
                             </a>
                         </article>
                     </div>      <!-- Fin de div bloc_imageMarseille -->
-                            <p class="marges_plus raleway_medium raleway13">Afficher plus</p>
+                            <a href="#" class="marges_plus raleway_medium raleway13">Afficher plus</a>
                     </div>       <!-- Fin de div bloc_Marseille -->
             
             <aside id="aside_populaires" class="flexbox borderradius10 backgroundgray">           
                     <h2 class="popular_title H2_size flexbox">Les plus populaires <i class="fas fa-chart-line"></i></h2>
                 <div id="bloc_imagePopulaires" class="flexbox">                    
-                    <article class="miniatures_populaires raleway_medium raleway12 backgroundwhite borderradius10">
+                    <article class="miniatures_populaires raleway_medium raleway12 backgroundwhite borderradius10 card">
                         <a href="#" class="links">
                             <div class="flexbox">
                             <div>
@@ -182,7 +182,7 @@
                             </div>
                         </a>    
                     </article>
-                    <article class="miniatures_populaires raleway_medium raleway12 backgroundwhite borderradius10">
+                    <article class="miniatures_populaires raleway_medium raleway12 backgroundwhite borderradius10 card">
                         <a href="#" class="links">
                             <div class="flexbox">
                             <div>
@@ -196,7 +196,7 @@
                             </div>
                         </a>
                     </article>
-                    <article class="miniatures_populaires raleway_medium raleway12 backgroundwhite flexbox borderradius10">
+                    <article class="miniatures_populaires raleway_medium raleway12 backgroundwhite flexbox borderradius10 card">
                         <a href="#" class="links">
                             <div class="flexbox aside_box">
                             <div>
@@ -219,42 +219,42 @@
             <section id="section_activités">   
                     <h2 class="activity_title H2_size">Activités à Marseille</h2>
                 <div id="bloc_imagesactivités">
-                    <figure id="port" class="raleway_medium backgroundwhite borderradius10 miniatures_activités miniatures">
+                    <figure id="port" class="raleway_medium backgroundwhite borderradius10 miniatures_activités miniatures card">
                         <a href="#" class="link_activity">
                             <img class="miniatures_activités_img" srcset="images/activites/4_small/vieux_port.jpg 63w, images/activites/2_large/vieux_port.jpg 680w" sizes="(max-width: 63px) 217px, (max-width: 680px) 270px" src="images/activites/4_small/vieux_port.jpg" alt="un port"/>
                             <p class="legendes">Vieux Port</p>
                         </a>
                     </figure>
 
-                    <figure id="pomègues" class="raleway_medium backgroundwhite borderradius10 miniatures_activités miniatures">  
+                    <figure id="pomègues" class="raleway_medium backgroundwhite borderradius10 miniatures_activités miniatures card">  
                         <a href="#" class="links">     
                             <img class="miniatures_activités_img" srcset="images/activites/4_small/fort_de_pomègues.jpg 29w, images/activites/2_large/pomègues.jpg 302w" sizes="(max-width: 29px) 217px, (max-width: 302px) 150px" src="images/activites/4_small/fort_de_pomègues.jpg" alt="un fort"/>
                             <p class="legendes">Fort de Pomègues</p>
                         </a>
                     </figure>
 
-                    <figure id="frioul" class="raleway_medium backgroundwhite borderradius10 miniatures_activités miniatures">
+                    <figure id="frioul" class="raleway_medium backgroundwhite borderradius10 miniatures_activités miniatures card">
                         <a href="#" class="links">
                             <img class="miniatures_activités_img" srcset="images/activites/4_small/ile_du_frioul.jpg 32w, images/activites/2_large/frioul.jpg 379w" sizes="(max-width: 32px) 217px, (max-width: 379px) 85px" src="images/activites/4_small/ile_du_frioul.jpg" alt="une ile"/>
                             <p class="legendes">Iles du Frioul</p>
                         </a>
                     </figure>
 
-                    <figure id="calanques" class="raleway_medium backgroundwhite borderradius10 miniatures_activités miniatures">
+                    <figure id="calanques" class="raleway_medium backgroundwhite borderradius10 miniatures_activités miniatures card">
                         <a href="#"  class="links">
                             <img class="miniatures_activités_img" srcset="images/activites/4_small/parc_des_calanques.jpg 42w, images/activites/2_large/calanques.jpg 508w" sizes="(max-width: 42px) 217px, (max-width: 508px) 270px" src="images/activites/4_small/parc_des_calanques.jpg" alt="des rochers et la mer"/>
                             <p class="legendes">Parc National des Calanques</p>
                         </a>
                     </figure>
 
-                    <figure id="garde" class="raleway_medium backgroundwhite borderradius10 miniatures_activités miniatures">
+                    <figure id="garde" class="raleway_medium backgroundwhite borderradius10 miniatures_activités miniatures card">
                         <a href="#" class="links">
                             <img class="miniatures_activités_img" srcset="images/activites/4_small/notre_dame_de_la_garde.jpg 53w, images/activites/2_large/garde.jpg 738w" sizes="(max-width: 53px) 217px, (max-width: 738px) 100px" src="images/activites/4_small/notre_dame_de_la_garde.jpg" alt="une église"/>
                             <p class="legendes">Notre-Dame-de-la-Garde</p>
                         </a>
                     </figure>
 
-                    <figure id="longchamp" class="raleway_medium backgroundwhite borderradius10 miniatures_activités miniatures">
+                    <figure id="longchamp" class="raleway_medium backgroundwhite borderradius10 miniatures_activités miniatures card">
                         <a href="#" class="links">
                             <img class="miniatures_activités_img" srcset="images/activites/4_small/parc_longchamp.jpg 29w, images/activites/2_large/longchamp.jpg 485w" sizes="(max-width: 29px) 217px, (max-width: 485px) 107px" src="images/activites/4_small/parc_longchamp.jpg" alt="un monument"/>
                             <p class="legendes">Parc Longchamp</p>
